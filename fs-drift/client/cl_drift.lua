@@ -5,7 +5,7 @@ RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
                   isLoggedIn = true
                     PlayerData = QBCore.Functions.GetPlayerData() end)
 RegisterKeyMapping('DriftOn', 'ToggleDrift Mode', 'keyboard', 'Shift')
-RegisterKeyMapping('Driftoff', 'ToggleDrift Mode', 'keyboard', 'Shift')
+
 
 Citizen.CreateThread( function()
 		while true do
