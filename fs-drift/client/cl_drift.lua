@@ -2,8 +2,10 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 		AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
-				isLoggedIn = true
-						PlayerData = QBCore.Functions.GetPlayerData() end)
+                  isLoggedIn = true
+                    PlayerData = QBCore.Functions.GetPlayerData() end)
+RegisterKeyMapping('DriftOn', 'ToggleDrift Mode', 'keyboard', 'Shift')
+RegisterKeyMapping('Driftoff', 'ToggleDrift Mode', 'keyboard', 'Shift')
 
 Citizen.CreateThread( function()
 		while true do
