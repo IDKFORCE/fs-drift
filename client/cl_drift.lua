@@ -2,12 +2,10 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 		AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
-                  isLoggedIn = true
-                    PlayerData = QBCore.Functions.GetPlayerData() end)
-RegisterKeyMapping('DriftOn', 'ToggleDrift Mode', 'keyboard', 'Shift')
+				isLoggedIn = true
+						PlayerData = QBCore.Functions.GetPlayerData() end)
 
-
-Citizen.CreateThread( function()
+CreateThread( function()
 		while true do
 			Wait(1)
 				local ped = GetPlayerPed(-1)
@@ -86,4 +84,3 @@ QBCore.Functions.Notify("Drift Mode On", "success")
 								AddTextComponentString(text)
 						DrawNotification(false, false)
 					end
-
