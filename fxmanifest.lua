@@ -1,10 +1,13 @@
 fx_version 'cerulean'
 game 'gta5'
 
-aurthur "⸸♱♥IDK_FORCE♥♱⸸#7611"
+author 'GhostFaceScripts'
+description 'GhostFace Drift'
+version '1.0.0'
 
-description 'fs-drift'
+client_scripts {
+'cl_drift.lua'
+}
 
-version '1.0'
+lua54 'yes'
 
-client_script 'cl_drift.lua'
